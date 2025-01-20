@@ -8,12 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var givenInput = ""
+    @State var targetfuel = Int.random(in: 1...100)
+    @State var feedback = ""
+    @State var FuelUsageMade: [Int] = []
+    
+    
+    
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+        NavigationStack {
+            
         }
         .padding()
     }
