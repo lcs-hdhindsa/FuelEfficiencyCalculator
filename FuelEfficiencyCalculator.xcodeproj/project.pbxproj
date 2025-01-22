@@ -74,8 +74,16 @@
 			children = (
 				748A0E0C2D3E99D500041C0D /* ContentView.swift */,
 				748A0E142D3E9A1800041C0D /* FuelCalculatorView.swift */,
+				748A0E542D414FF100041C0D /* Model */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		748A0E542D414FF100041C0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

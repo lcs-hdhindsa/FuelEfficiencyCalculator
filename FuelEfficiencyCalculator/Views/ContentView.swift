@@ -20,9 +20,23 @@ struct ContentView: View {
     var body: some View {
         
         NavigationStack {
-            
+            VStack{
+                HStack {
+                    
+                    Text("")
+                    
+                    Text("Distanced Travelled")
+                        .font(.headline)
+                    TextField("Km", text: $givenInput)
+                    Spacer ()
+                    Text("Fuel Used")
+                        .font(.headline)
+                    TextField("L", text: $givenInput)
+                }
+                .padding()
+                .navigationTitle("Fuel Usage Calculator")
+            }
         }
-        .padding()
     }
 }
 
