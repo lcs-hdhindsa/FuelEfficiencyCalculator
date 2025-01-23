@@ -8,33 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @State var givenInput = ""
-    @State var targetfuel = Int.random(in: 1...100)
-    @State var feedback = ""
-    @State var FuelUsageMade: [Int] = []
-    
-    
-    
+    @State private var distance: String = ""
+    @State private var fuelUsed: String = ""
+    @State private var result: String = ""
+    @State private var history: [String] = []
     
     var body: some View {
-        
-        NavigationStack {
-            VStack{
-                HStack {
-                    
-                    Text("")
-                    
-                    Text("Distanced Travelled")
-                        .font(.headline)
-                    TextField("Km", text: $givenInput)
-                    Spacer ()
-                    Text("Fuel Used")
-                        .font(.headline)
-                    TextField("L", text: $givenInput)
-                }
-                .padding()
-                .navigationTitle("Fuel Usage Calculator")
+        NavigationView {
+            VStack(spacing: 20) {
+                Text("Fuel Efficiency Calculator")
+                    .font(.title)
+                    .padding()
+                
+                TextField("Distance Traveled (km)", text: $distance)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .keyboardType(.decimalPad)
+                
+                TextField("Fuel Used (liters)", text: $fuelUsed)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .keyboardType(.decimalPad)
+                
+                
+                
             }
         }
     }
