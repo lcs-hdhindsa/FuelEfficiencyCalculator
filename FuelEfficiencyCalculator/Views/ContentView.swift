@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var distance: String = ""
-    @State private var fuelUsed: String = ""
-    @State private var result: String = ""
-    @State private var history: [String] = []
+    @State var distance: String = ""
+    @State var fuelUsed: String = ""
+    @State var result: String = ""
+    @State var history: [String] = []
     
     var body: some View {
         NavigationView {
@@ -57,19 +57,19 @@ struct ContentView: View {
         }
     }
     
-    func calculateEfficiency() {
-        guard let distanceValue = Double(distance),
-              let fuelUsedValue = Double(fuelUsed),
+func calculateEfficiency() {
+    guard let distanceValue = Double(distance),
+          let fuelUsedValue = Double(fuelUsed),
               distanceValue > 0,
               fuelUsedValue > 0 else {
             result = "Invalid input. Please enter valid numbers."
             return
         }
         
-        let efficiency = (fuelUsedValue / distanceValue) * 100
+    let efficiency = (fuelUsedValue / distanceValue) * 100
         result = String(format: "%.2f L/100km", efficiency)
         
-        let historyEntry = "Distance: \(distance) km, Fuel: \(fuelUsed) L, Result: \(result)"
+    let historyEntry = "Distance: \(distance) km, Fuel: \(fuelUsed) L, Result: \(result)"
         history.insert(historyEntry, at: 0)
     }
     
