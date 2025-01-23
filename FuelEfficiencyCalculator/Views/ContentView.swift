@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var distance: String = ""
-    @State private var fuelUsed: String = ""
-    @State private var result: String = ""
-    @State private var history: [String] = []
+    @State var distance: String = ""
+    @State var fuelUsed: String = ""
+    @State var result: String = ""
+    @State var history: [String] = []
     
     var body: some View {
         NavigationView {
@@ -20,16 +20,32 @@ struct ContentView: View {
                     .font(.title)
                     .padding()
                 
-                TextField("Distance Traveled (km)", text: $distance)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .keyboardType(.decimalPad)
+            TextField("Distance Traveled (km)", text: $distance)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .keyboardType(.decimalPad)
                 
-                TextField("Fuel Used (liters)", text: $fuelUsed)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .keyboardType(.decimalPad)
+            TextField("Fuel Used (liters)", text: $fuelUsed)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .keyboardType(.decimalPad)
+                
+            HStack {
+                Button("Calculate") {
+                    calculateEfficiency()
+                }
+                .buttonStyle(.borderedProminent)
+                    
+                Button("Reset") {
+                    resetInputs()
+                }
+                .buttonStyle(.bordered)
+                    
+                Text("Result: \(result)")
+                .font(.headline)
                 
                 
-                
+                    
+                 
+               }
             }
         }
     }
