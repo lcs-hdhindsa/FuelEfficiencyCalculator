@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		748A0E0F2D3E99D500041C0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A0E0C2D3E99D500041C0D /* ContentView.swift */; };
-		748A0E102D3E99D500041C0D /* FuelEfficiencyCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A0E0D2D3E99D500041C0D /* FuelEfficiencyCalculatorApp.swift */; };
+		748A0E102D3E99D500041C0D /* FuelEfficiency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A0E0D2D3E99D500041C0D /* FuelEfficiency.swift */; };
 		748A0E112D3E99D500041C0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748A0E092D3E99D500041C0D /* Preview Assets.xcassets */; };
 		748A0E122D3E99D500041C0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748A0E0B2D3E99D500041C0D /* Assets.xcassets */; };
 		748A0E152D3E9A1800041C0D /* FuelCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A0E142D3E9A1800041C0D /* FuelCalculatorView.swift */; };
@@ -19,7 +19,7 @@
 		748A0E092D3E99D500041C0D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		748A0E0B2D3E99D500041C0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		748A0E0C2D3E99D500041C0D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		748A0E0D2D3E99D500041C0D /* FuelEfficiencyCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelEfficiencyCalculatorApp.swift; sourceTree = "<group>"; };
+		748A0E0D2D3E99D500041C0D /* FuelEfficiency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelEfficiency.swift; sourceTree = "<group>"; };
 		748A0E142D3E9A1800041C0D /* FuelCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelCalculatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,7 +63,7 @@
 			children = (
 				748A0E132D3E99E700041C0D /* Views */,
 				748A0E0B2D3E99D500041C0D /* Assets.xcassets */,
-				748A0E0D2D3E99D500041C0D /* FuelEfficiencyCalculatorApp.swift */,
+				748A0E0D2D3E99D500041C0D /* FuelEfficiency.swift */,
 				748A0E0A2D3E99D500041C0D /* Preview Content */,
 			);
 			path = FuelEfficiencyCalculator;
@@ -161,7 +161,7 @@
 			files = (
 				748A0E0F2D3E99D500041C0D /* ContentView.swift in Sources */,
 				748A0E152D3E9A1800041C0D /* FuelCalculatorView.swift in Sources */,
-				748A0E102D3E99D500041C0D /* FuelEfficiencyCalculatorApp.swift in Sources */,
+				748A0E102D3E99D500041C0D /* FuelEfficiency.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -68,6 +68,9 @@ struct ContentView: View {
         
         let efficiency = (fuelUsedValue / distanceValue) * 100
         result = String(format: "%.2f L/100km", efficiency)
+        
+        let historyEntry = "Distance: \(distance) km, Fuel: \(fuelUsed) L, Result: \(result)"
+        history.insert(historyEntry, at: 0)
     }
     
     func resetInputs() {
