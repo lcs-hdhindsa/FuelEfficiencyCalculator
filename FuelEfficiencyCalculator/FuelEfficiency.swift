@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct FuelEfficiencyCalculatorApp: App {
+struct FuelEfficiency: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
